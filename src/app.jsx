@@ -11,8 +11,7 @@ const App = ({ presenter }) => {
   const handleIncrement = useCallback(habit => {
     presenter.increment(habit, setHabits);
   }, []);
-  console.log(habits);
-
+  
   const handleDecrement = useCallback(habit => {
     presenter.decrement(habit, setHabits);
   }, []);
